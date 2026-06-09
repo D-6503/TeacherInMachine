@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 50% 96.5%; /* Warm milky cream background */
+    --foreground: 25 35% 12%; /* Deep chocolate cocoa brown for text */
+    --card: 35 100% 98%; /* Cream cards */
+    --card-foreground: 25 35% 14%;
+    --primary: 22 95% 50%; /* Vibrant Kinder Orange */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 28 100% 95%; /* Creamy sweet peach */
+    --secondary-foreground: 22 80% 25%;
+    --muted: 35 40% 94%; /* Warm milky latte */
+    --muted-foreground: 25 15% 42%; /* Soft dusky brown */
+    --accent: 200 100% 45%; /* Kinder logo sky blue accent */
+    --accent-foreground: 0 0% 100%;
+    --border: 35 25% 91%; /* Soft border */
+    --input: 35 25% 91%;
+    --ring: 22 95% 50%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(15, 23, 42, 0.08);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 23, 42, 0.16);
+  }
+}
+
+@layer utilities {
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .glass {
+    background: rgba(254, 251, 244, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(44, 30, 20, 0.05);
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-bob {
+    animation: bob 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s infinite;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 98, 0, 0.4); }
+    50% { box-shadow: 0 0 16px 6px rgba(255, 98, 0, 0.2); }
+  }
+
+  /* 3D Tactile Buttons (Duolingo Press Effect) */
+  .btn-3d-primary {
+    position: relative;
+    transform: translateY(0);
+    border-bottom: 5px solid #c24a00 !important;
+    transition: all 0.08s ease;
+  }
+  .btn-3d-primary:hover:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom-width: 4px !important;
+  }
+  .btn-3d-primary:active:not(:disabled) {
+    transform: translateY(5px);
+    border-bottom-width: 0px !important;
+  }
+
+  .btn-3d-accent {
+    position: relative;
+    transform: translateY(0);
+    border-bottom: 5px solid #005f93 !important;
+    transition: all 0.08s ease;
+  }
+  .btn-3d-accent:hover:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom-width: 4px !important;
+  }
+  .btn-3d-accent:active:not(:disabled) {
+    transform: translateY(5px);
+    border-bottom-width: 0px !important;
+  }
+
+  .btn-3d-success {
+    position: relative;
+    transform: translateY(0);
+    border-bottom: 5px solid #15803d !important;
+    transition: all 0.08s ease;
+  }
+  .btn-3d-success:hover:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom-width: 4px !important;
+  }
+  .btn-3d-success:active:not(:disabled) {
+    transform: translateY(5px);
+    border-bottom-width: 0px !important;
+  }
+
+  .btn-3d-secondary {
+    position: relative;
+    transform: translateY(0);
+    border-bottom: 5px solid #bda18d !important;
+    transition: all 0.08s ease;
+  }
+  .btn-3d-secondary:hover:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom-width: 4px !important;
+  }
+  .btn-3d-secondary:active:not(:disabled) {
+    transform: translateY(5px);
+    border-bottom-width: 0px !important;
+  }
+
+  /* Support for tailwind-like light style overlays in code components */
+  .bg-white\/2 { background-color: rgba(15, 23, 42, 0.015); }
+  .bg-white\/3 { background-color: rgba(15, 23, 42, 0.025); }
+  .bg-white\/4 { background-color: rgba(15, 23, 42, 0.035); }
+  .border-white\/3 { border-color: rgba(15, 23, 42, 0.03); }
+  .border-white\/5 { border-color: rgba(15, 23, 42, 0.05); }
+  .border-white\/8 { border-color: rgba(15, 23, 42, 0.08); }
+  .border-white\/12 { border-color: rgba(15, 23, 42, 0.12); }
+  .border-white\/15 { border-color: rgba(15, 23, 42, 0.15); }
+  .hover\:border-white\/12:hover { border-color: rgba(15, 23, 42, 0.12); }
+  .hover\:border-white\/15:hover { border-color: rgba(15, 23, 42, 0.15); }
+  .hover\:bg-white\/2:hover { background-color: rgba(15, 23, 42, 0.015); }
+  .hover\:bg-white\/5:hover { background-color: rgba(15, 23, 42, 0.05); }
+}
