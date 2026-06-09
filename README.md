@@ -10,17 +10,25 @@ Inspired by **Duolingo’s vibrant aesthetics**, the platform features satisfyin
 
 ## 📸 Platform Screenshots
 
-### Winding Learning Roadmap Dashboard
-![Roadmap Dashboard](docs/screenshots/dashboard.png)
+### Home Page
 
-### Socratic AI Tutor with Live Voice Dictation
-![Socratic Chat](docs/screenshots/learn.png)
+<img width="1919" height="867" alt="Screenshot 2026-06-09 224244" src="https://github.com/user-attachments/assets/87e674a3-38a3-4abd-9c67-006a00f0134b" />
+
+
+### Winding Learning Roadmap Dashboard
+![Roadmap Dashboard](<img width="1917" height="867" alt="Screenshot 2026-06-09 223944" src="https://github.com/user-attachments/assets/cbe1fdaa-a725-4ba6-8011-85dcc280924b" />
+)
+
+### Socratic AI Tutor
+![Socratic Chat](<img width="1919" height="870" alt="Screenshot 2026-06-09 225321" src="https://github.com/user-attachments/assets/73cba4fd-6bd8-4259-b301-d9a16ad75c58" />
+)
 
 ### Socratic Answer Evaluation and Comparison
 ![Result Panel](docs/screenshots/test.png)
 
 ### Admin Questions and Topic Dashboard
-![Admin Panel](docs/screenshots/admin.png)
+![Admin Panel](<img width="1919" height="869" alt="Screenshot 2026-06-09 225900" src="https://github.com/user-attachments/assets/91299aef-0af1-4640-98a5-abdeb6456ddd" />
+)
 
 ---
 
