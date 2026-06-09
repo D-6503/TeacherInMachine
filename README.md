@@ -24,7 +24,8 @@ Inspired by **Duolingo’s vibrant aesthetics**, the platform features satisfyin
 
 
 ### Socratic Answer Evaluation and Comparison
-![Result Panel](docs/screenshots/test.png)
+<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/7d40a2cc-0ada-416f-9e87-5341dbe77d58" />
+
 
 ### Admin Questions and Topic Dashboard
 <img width="1919" height="869" alt="Screenshot 2026-06-09 225900" src="https://github.com/user-attachments/assets/91299aef-0af1-4640-98a5-abdeb6456ddd" />
